@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Adem Nasufi – Webentwicklung für Unternehmen</title>
+<meta name="description" content="Individuelle, moderne und responsive Webseiten mit HTML, CSS und JavaScript – maßgeschneidert für Ihr Unternehmen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">Adem<span>Nasufi</span></a>
+
+    <div class="header__right">
+      <nav class="nav" id="nav">
+        <a href="#leistungen" data-i18n="nav.leistungen">Leistungen</a>
+        <a href="#ueber-mich" data-i18n="nav.ueber_mich">Über mich</a>
+        <a href="#ablauf" data-i18n="nav.ablauf">Ablauf</a>
+        <a href="#referenzen" data-i18n="nav.referenzen">Referenzen</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#kontakt" class="nav__cta" data-i18n="nav.kontakt">Kontakt</a>
+      </nav>
+
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="sq">SQ</button>
+      </div>
+
+      <button class="burger" id="burger" data-i18n-aria="aria.menu_open" aria-label="Menü öffnen" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero__bg" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow reveal" data-i18n="hero.eyebrow">Webentwicklung mit Leidenschaft</p>
+    <h1 class="reveal" data-i18n-html="hero.title">Webseiten, die Ihr Unternehmen<br> professionell präsentieren.</h1>
+    <p class="hero__sub reveal" data-i18n="hero.sub">Modern. Individuell. Responsive.</p>
+    <p class="hero__text reveal" data-i18n="hero.text">
+      Ich entwickle maßgeschneiderte Webseiten mit HTML, CSS und JavaScript –
+      schnell, sauber programmiert und perfekt auf Ihr Unternehmen abgestimmt.
+    </p>
+    <div class="hero__actions reveal">
+      <a href="#kontakt" class="btn btn--primary" data-i18n="hero.cta_primary">Kostenloses Erstgespräch</a>
+      <a href="#referenzen" class="btn btn--ghost" data-i18n="hero.cta_secondary">Projekte ansehen</a>
+    </div>
+  </div>
+  <a href="#warum" class="scroll-hint" data-i18n-aria="aria.scroll_down" aria-label="Nach unten scrollen"><span></span></a>
+</section>
+
+<!-- ===== Warum eine Website ===== -->
+<section class="section" id="warum">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="warum.eyebrow">Der erste Eindruck zählt</p>
+      <h2 data-i18n="warum.title">Warum eine professionelle Website?</h2>
+    </div>
+
+    <div class="warum-grid">
+      <p class="warum-lead reveal" data-i18n="warum.lead">
+        Ihre Website ist oft der erste Kontakt mit potenziellen Kunden.
+        Innerhalb weniger Sekunden entsteht der erste Eindruck.
+      </p>
+      <div class="warum-cards">
+        <div class="warum-card reveal">
+          <div class="warum-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1 3-6z"/></svg>
+          </div>
+          <p data-i18n-html="warum.card1">Eine moderne Website schafft <strong>Vertrauen</strong> und präsentiert Ihre Leistungen übersichtlich.</p>
+        </div>
+        <div class="warum-card reveal">
+          <div class="warum-card__icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <p data-i18n-html="warum.card2">Ihr Unternehmen ist dadurch <strong>rund um die Uhr erreichbar</strong> – auch außerhalb der Öffnungszeiten.</p>
+        </div>
+        <div class="warum-card reveal">
+          <div class="warum-card__icon">
+            <svg viewBox="0 0 24 24"><path d="M4 19h16M6 19V9l6-5 6 5v10"/></svg>
+          </div>
+          <p data-i18n="warum.card3">Ich unterstütze Sie dabei, einen Internetauftritt zu entwickeln, der überzeugt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Leistungen ===== -->
+<section class="section section--alt" id="leistungen">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="leistungen.eyebrow">Leistungen</p>
+      <h2 data-i18n="leistungen.title">Alles aus einer Hand</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M4 21V7l8-4 8 4v14M9 21v-6h6v6"/></svg></div>
+        <h3 data-i18n="service1.title">Individuelle Unternehmenswebseiten</h3>
+        <p data-i18n="service1.desc">Keine fertigen Vorlagen. Jede Website wird speziell für Ihr Unternehmen entwickelt.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3 data-i18n="service2.title">Responsive Design</h3>
+        <p data-i18n="service2.desc">Optimiert für Smartphone, Tablet und Desktop.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M8 4l-6 8 6 8M16 4l6 8-6 8"/></svg></div>
+        <h3 data-i18n="service3.title">HTML • CSS • JavaScript</h3>
+        <p data-i18n="service3.desc">Sauber programmierter Code für schnelle Ladezeiten und eine zuverlässige Darstellung.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+        <h3 data-i18n="service4.title">Modernes Webdesign</h3>
+        <p data-i18n="service4.desc">Zeitloses Design passend zu Ihrer Marke.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <h3 data-i18n="service5.title">Suchmaschinenfreundlich</h3>
+        <p data-i18n="service5.desc">Eine gute technische Grundlage für bessere Sichtbarkeit bei Suchmaschinen.</p>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-card__icon"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.1 2.1-2-2 2.1-2.1z"/></svg></div>
+        <h3 data-i18n="service6.title">Wartung & Support</h3>
+        <p data-i18n="service6.desc">Auch nach der Fertigstellung unterstütze ich Sie gerne bei Änderungen und Erweiterungen.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Warum mit mir ===== -->
+<section class="section" id="vorteile">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="vorteile.eyebrow">Vorteile</p>
+      <h2 data-i18n="vorteile.title">Warum mit mir?</h2>
+    </div>
+
+    <ul class="benefits-grid">
+      <li class="reveal"><span>✔</span><span data-i18n="benefit1">Individuelles Design statt Baukasten</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit2">Persönliche Betreuung</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit3">Moderne Technologien</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit4">Schnelle Ladezeiten</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit5">Responsive Entwicklung</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit6">Ehrliche Kommunikation</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit7">Zuverlässige Zusammenarbeit</span></li>
+      <li class="reveal"><span>✔</span><span data-i18n="benefit8">Fokus auf Qualität statt Masse</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== Über mich ===== -->
+<section class="section section--alt" id="ueber-mich">
+  <div class="container about">
+    <div class="about__media reveal" aria-hidden="true">
+      <img class="about__avatar" src="img/adem-nasufi-avatar.jpeg" alt="Adem Nasufi">
+    </div>
+    <div class="about__content reveal">
+      <p class="eyebrow" data-i18n="about.eyebrow">Über mich</p>
+      <h2 data-i18n="about.title">Mehr als nur eine Website</h2>
+      <blockquote data-i18n="about.quote">
+        „Eine gute Website zeigt nicht nur, was ein Unternehmen macht.
+        Sie zeigt, warum Kunden genau diesem Unternehmen vertrauen sollten.“
+      </blockquote>
+
+      <p><strong data-i18n="about.intro">Hallo! Ich bin Adem – Webentwickler aus Leidenschaft.</strong></p>
+      <p data-i18n="about.p1">
+        Seit über eineinhalb Jahren beschäftige ich mich intensiv mit der Programmierung
+        und arbeite mit HTML, CSS und JavaScript. Schon immer hat mich begeistert, Ideen
+        in funktionierende Projekte umzusetzen – genau deshalb habe ich mich für die
+        Webentwicklung entschieden.
+      </p>
+      <p data-i18n="about.p2">
+        Besonders spannend finde ich es, Unternehmen dabei zu unterstützen, ihre Leistungen
+        professionell im Internet zu präsentieren. Viele Betriebe leisten großartige Arbeit,
+        doch ihre Website spiegelt das oft nicht wider. Mein Ziel ist es, genau das zu ändern.
+      </p>
+      <p data-i18n="about.p3">
+        Ich entwickle moderne Webseiten, die nicht nur gut aussehen, sondern Vertrauen schaffen
+        und Ihr Unternehmen authentisch präsentieren. Jedes Projekt ist einzigartig – deshalb
+        entsteht jede Website individuell und passend zu Ihrem Unternehmen.
+      </p>
+
+      <ul class="about__values">
+        <li data-i18n="about.value1">Sauberer Code</li>
+        <li data-i18n="about.value2">Modernes Design</li>
+        <li data-i18n="about.value3">Schnelle Ladezeiten</li>
+        <li data-i18n="about.value4">Mobile Optimierung</li>
+        <li data-i18n="about.value5">Unkomplizierte Zusammenarbeit</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Ablauf ===== -->
+<section class="section" id="ablauf">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="ablauf.eyebrow">Zusammenarbeit</p>
+      <h2 data-i18n="ablauf.title">So läuft unsere Zusammenarbeit ab</h2>
+    </div>
+
+    <ol class="timeline">
+      <li class="reveal">
+        <span class="timeline__num">1</span>
+        <div><h3 data-i18n="step1.title">Kennenlernen</h3><p data-i18n="step1.desc">Wir sprechen über Ihr Unternehmen, Ihre Wünsche und Ihre Ziele.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="timeline__num">2</span>
+        <div><h3 data-i18n="step2.title">Planung</h3><p data-i18n="step2.desc">Gemeinsam entwickeln wir ein Konzept für Ihre neue Website.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="timeline__num">3</span>
+        <div><h3 data-i18n="step3.title">Design & Entwicklung</h3><p data-i18n="step3.desc">Ich programmiere Ihre Website individuell mit HTML, CSS und JavaScript.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="timeline__num">4</span>
+        <div><h3 data-i18n="step4.title">Feedback</h3><p data-i18n="step4.desc">Sie testen die Website und geben mir Ihre Änderungswünsche.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="timeline__num">5</span>
+        <div><h3 data-i18n="step5.title">Veröffentlichung</h3><p data-i18n="step5.desc">Nach Ihrer Freigabe geht Ihre Website online.</p></div>
+      </li>
+      <li class="reveal">
+        <span class="timeline__num">6</span>
+        <div><h3 data-i18n="step6.title">Betreuung</h3><p data-i18n="step6.desc">Auch nach dem Launch stehe ich Ihnen bei Fragen oder Erweiterungen zur Verfügung.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== Referenzen ===== -->
+<section class="section section--alt" id="referenzen">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="referenzen.eyebrow">Referenzen</p>
+      <h2 data-i18n="referenzen.title">Ausgewählte Projekte</h2>
+      <p class="section-lead" data-i18n="referenzen.lead">Hier finden Sie in Kürze eine Auswahl meiner bisherigen Projekte.</p>
+    </div>
+
+    <div class="projects-grid">
+      <a href="demo-projekte/restaurant/index.html" target="_blank" class="project-card reveal">
+        <div class="project-card__thumb project-card__thumb--restaurant">
+          <span class="project-card__badge" data-i18n="project.badge">Projekt Demo</span>
+        </div>
+        <div class="project-card__body">
+          <h3 data-i18n="project1.title">Ristorante Bella Vista</h3>
+          <p data-i18n="project1.desc">Einseitige Website für ein italienisches Restaurant – mit Speisekarte, Galerie und Reservierungsformular.</p>
+          <span class="project-card__link" data-i18n="project.link">Demo ansehen →</span>
+        </div>
+      </a>
+      <a href="demo-projekte/fitness/index.html" target="_blank" class="project-card reveal">
+        <div class="project-card__thumb project-card__thumb--fitness">
+          <span class="project-card__badge" data-i18n="project.badge">Projekt Demo</span>
+        </div>
+        <div class="project-card__body">
+          <h3 data-i18n="project2.title">FitZone Studio</h3>
+          <p data-i18n="project2.desc">Moderne Website für ein Fitnessstudio – mit Kursübersicht, Preisplänen und Probetraining-Anfrage.</p>
+          <span class="project-card__link" data-i18n="project.link">Demo ansehen →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+      <h2 data-i18n="faq.title">Häufige Fragen</h2>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion__item reveal">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span data-i18n="faq1.q">Wie lange dauert eine Website?</span>
+          <span class="accordion__icon"></span>
+        </button>
+        <div class="accordion__panel">
+          <p data-i18n="faq1.a">Je nach Umfang zwischen wenigen Tagen und einigen Wochen.</p>
+        </div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span data-i18n="faq2.q">Was kostet eine Website?</span>
+          <span class="accordion__icon"></span>
+        </button>
+        <div class="accordion__panel">
+          <p data-i18n="faq2.a">Der Preis richtet sich nach dem gewünschten Umfang. Gerne erstelle ich Ihnen ein unverbindliches Angebot.</p>
+        </div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span data-i18n="faq3.q">Kann ich später Änderungen vornehmen?</span>
+          <span class="accordion__icon"></span>
+        </button>
+        <div class="accordion__panel">
+          <p data-i18n="faq3.a">Ja. Inhalte können jederzeit erweitert oder angepasst werden.</p>
+        </div>
+      </div>
+      <div class="accordion__item reveal">
+        <button class="accordion__trigger" aria-expanded="false">
+          <span data-i18n="faq4.q">Unterstützen Sie auch nach der Fertigstellung?</span>
+          <span class="accordion__icon"></span>
+        </button>
+        <div class="accordion__panel">
+          <p data-i18n="faq4.a">Selbstverständlich. Ich stehe Ihnen auch nach der Veröffentlichung weiterhin zur Seite.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Kontakt ===== -->
+<section class="section section--alt" id="kontakt">
+  <div class="container kontakt">
+    <div class="kontakt__intro reveal">
+      <p class="eyebrow" data-i18n="kontakt.eyebrow">Kontakt</p>
+      <h2 data-i18n="kontakt.title">Lassen Sie uns gemeinsam Ihr Projekt starten.</h2>
+      <p data-i18n="kontakt.text">
+        Egal ob neue Website oder Überarbeitung eines bestehenden Internetauftritts –
+        ich freue mich darauf, mehr über Ihr Unternehmen zu erfahren.
+      </p>
+
+      <ul class="kontakt__list">
+        <li>
+          <span class="kontakt__icon"><svg viewBox="0 0 24 24"><path d="M3 6l9 7 9-7"/><rect x="3" y="4" width="18" height="16" rx="2"/></svg></span>
+          <div><strong data-i18n="kontakt.email_label">E-Mail</strong><a href="mailto:ademnasufi@hotmail.com">ademnasufi@hotmail.com</a></div>
+        </li>
+      </ul>
+    </div>
+
+    <form class="kontakt__form reveal" id="contact-form">
+      <div class="form-row">
+        <label for="name" data-i18n="form.name_label">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email" data-i18n="form.email_label">E-Mail</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="unternehmen" data-i18n="form.company_label">Unternehmen (optional)</label>
+        <input type="text" id="unternehmen" name="unternehmen">
+      </div>
+      <div class="form-row">
+        <label for="nachricht" data-i18n="form.message_label">Nachricht</label>
+        <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--block" data-i18n="form.submit">Nachricht senden</button>
+      <p class="form-note" id="form-note"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo">Adem<span>Nasufi</span></a>
+
+    <nav class="footer__nav">
+      <a href="#home" data-i18n="footer.home">Startseite</a>
+      <a href="#ueber-mich" data-i18n="nav.ueber_mich">Über mich</a>
+      <a href="#leistungen" data-i18n="nav.leistungen">Leistungen</a>
+      <a href="#referenzen" data-i18n="nav.referenzen">Referenzen</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#kontakt" data-i18n="nav.kontakt">Kontakt</a>
+      <a href="impressum.html" data-i18n="footer.impressum">Impressum</a>
+      <a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutzerklärung</a>
+    </nav>
+
+    <p class="footer__copy">&copy; <span id="year"></span> Adem Nasufi. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

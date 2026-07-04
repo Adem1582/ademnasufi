@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="legal.impressum.meta_title">Impressum – Adem Nasufi</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .legal{ padding:160px 0 100px; max-width:760px; }
+  .legal h1{ color: var(--heading); font-size:2rem; }
+  .legal h2{ color: var(--heading); font-size:1.2rem; margin-top:2em; }
+  .legal p{ margin-bottom:1em; }
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="index.html" class="logo">Adem<span>Nasufi</span></a>
+    <div class="header__right">
+      <nav class="nav" id="nav">
+        <a href="index.html#leistungen" data-i18n="nav.leistungen">Leistungen</a>
+        <a href="index.html#ueber-mich" data-i18n="nav.ueber_mich">Über mich</a>
+        <a href="index.html#referenzen" data-i18n="nav.referenzen">Referenzen</a>
+        <a href="index.html#kontakt" class="nav__cta" data-i18n="nav.kontakt">Kontakt</a>
+      </nav>
+      <div class="lang-switch" id="lang-switch">
+        <button class="lang-btn" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="sq">SQ</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container legal">
+  <h1 data-i18n="legal.impressum.h1">Impressum</h1>
+
+  <h2 data-i18n="legal.impressum.h2_tmg">Angaben gemäß § 5 TMG</h2>
+  <p data-i18n-html="legal.impressum.address">
+    Adem Nasufi<br>
+    Mühlweg 106<br>
+    78054 Villingen-Schwenningen<br>
+    Deutschland
+  </p>
+
+  <h2 data-i18n="nav.kontakt">Kontakt</h2>
+  <p data-i18n-html="legal.impressum.kontakt_body">
+    E-Mail: ademnasufi@hotmail.com
+  </p>
+
+  <h2 data-i18n="legal.impressum.h2_ust">Umsatzsteuer-ID</h2>
+  <p data-i18n="legal.impressum.ust_body">[Falls vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG]</p>
+
+  <h2 data-i18n="legal.impressum.h2_verantwortlich">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
+  <p data-i18n-html="legal.impressum.verantwortlich_body">
+    Adem Nasufi<br>
+    Mühlweg 106<br>
+    78054 Villingen-Schwenningen
+  </p>
+
+  <p style="font-size:.85rem; color:var(--text-muted); margin-top:2.5em;" data-i18n="legal.impressum.notice">
+    Hinweis: Dieses Impressum ist ein Platzhalter und muss vor Veröffentlichung
+    der Website mit vollständigen, korrekten Angaben ergänzt werden.
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="index.html" class="logo">Adem<span>Nasufi</span></a>
+    <p class="footer__copy">&copy; <span id="year"></span> Adem Nasufi. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></p>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
