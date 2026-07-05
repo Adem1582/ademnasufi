@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristorante Bella Vista – Demo Projekt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="demo-banner">Projekt Demo — erstellt von <strong>Adem Nasufi</strong> als Beispielprojekt</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">Bella <span>Vista</span></a>
+    <nav class="nav" id="nav">
+      <a href="#speisekarte">Speisekarte</a>
+      <a href="#ueber-uns">Über uns</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#kontakt" class="nav__cta">Tisch reservieren</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <p class="eyebrow">Ristorante Italiano · seit 1998</p>
+    <h1>Authentische italienische<br>Küche im Herzen der Stadt</h1>
+    <p class="hero__text">Frische Zutaten, traditionelle Rezepte und ein Ambiente, das an einen Sommerabend in der Toskana erinnert.</p>
+    <div class="hero__actions">
+      <a href="#kontakt" class="btn btn--primary">Tisch reservieren</a>
+      <a href="#speisekarte" class="btn btn--ghost">Speisekarte ansehen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ueber-uns">
+  <div class="container about">
+    <div class="about__media" aria-hidden="true"></div>
+    <div class="about__content">
+      <p class="eyebrow">Über uns</p>
+      <h2>Eine Familientradition seit drei Generationen</h2>
+      <p>Seit 1998 servieren wir echte italienische Gerichte nach Rezepten, die von Generation zu Generation weitergegeben wurden. Jedes Gericht wird mit frischen, sorgfältig ausgewählten Zutaten zubereitet.</p>
+      <p>Unser Restaurant steht für Gastfreundschaft, Qualität und den unverwechselbaren Geschmack Italiens – mitten in Ihrer Stadt.</p>
+      <ul class="about__facts">
+        <li><strong>25+</strong> Jahre Erfahrung</li>
+        <li><strong>40</strong> Gerichte auf der Karte</li>
+        <li><strong>4.8★</strong> Kundenbewertung</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="speisekarte">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Speisekarte</p>
+      <h2>Unsere Highlights</h2>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-card__img menu-card__img--1" aria-hidden="true"></div>
+        <div class="menu-card__body">
+          <div class="menu-card__row"><h3>Spaghetti Vongole</h3><span>16,50 €</span></div>
+          <p>Frische Venusmuscheln, Weißwein, Knoblauch, Petersilie.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__img menu-card__img--2" aria-hidden="true"></div>
+        <div class="menu-card__body">
+          <div class="menu-card__row"><h3>Pizza Tartufo</h3><span>14,90 €</span></div>
+          <p>Trüffelcreme, Mozzarella, Rucola, Parmesan.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__img menu-card__img--3" aria-hidden="true"></div>
+        <div class="menu-card__body">
+          <div class="menu-card__row"><h3>Ossobuco Milanese</h3><span>22,00 €</span></div>
+          <p>Geschmorte Kalbshaxe, Risotto allo zafferano.</p>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card__img menu-card__img--4" aria-hidden="true"></div>
+        <div class="menu-card__body">
+          <div class="menu-card__row"><h3>Tiramisù della Casa</h3><span>7,50 €</span></div>
+          <p>Hausgemacht nach Familienrezept.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="galerie">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Galerie</p>
+      <h2>Ein Blick in unser Restaurant</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--1"></div>
+      <div class="gallery-item gallery-item--2"></div>
+      <div class="gallery-item gallery-item--3"></div>
+      <div class="gallery-item gallery-item--4"></div>
+      <div class="gallery-item gallery-item--5"></div>
+      <div class="gallery-item gallery-item--6"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="kontakt">
+  <div class="container kontakt">
+    <div class="kontakt__intro">
+      <p class="eyebrow">Kontakt & Reservierung</p>
+      <h2>Wir freuen uns auf Ihren Besuch</h2>
+      <ul class="kontakt__list">
+        <li><strong>Adresse</strong><span>Musterstraße 12, 10115 Berlin</span></li>
+        <li><strong>Öffnungszeiten</strong><span>Di–So, 12:00–23:00 Uhr</span></li>
+        <li><strong>Telefon</strong><span>+49 30 000 000</span></li>
+      </ul>
+    </div>
+    <form class="kontakt__form" onsubmit="event.preventDefault(); alert('Demo-Formular – keine echte Reservierung.');">
+      <div class="form-row"><label>Name</label><input type="text" required></div>
+      <div class="form-row"><label>Datum</label><input type="date" required></div>
+      <div class="form-row"><label>Personen</label><input type="number" min="1" value="2" required></div>
+      <button type="submit" class="btn btn--primary btn--block">Reservierung anfragen</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo">Bella <span>Vista</span></a>
+    <p class="footer__copy">&copy; 2026 Ristorante Bella Vista — Demo-Projekt von Adem Nasufi</p>
+    <a href="../../index.html" class="back-link">← Zurück zum Portfolio</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitZone Studio – Demo Projekt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="demo-banner">Projekt Demo — erstellt von <strong>Adem Nasufi</strong> als Beispielprojekt</div>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">FIT<span>ZONE</span></a>
+    <nav class="nav" id="nav">
+      <a href="#kurse">Kurse</a>
+      <a href="#preise">Preise</a>
+      <a href="#trainer">Trainer</a>
+      <a href="#kontakt" class="nav__cta">Probetraining</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero__inner">
+    <p class="eyebrow">Dein Studio. Dein Fortschritt.</p>
+    <h1>ERREICHE DEIN<br>BESTES ICH</h1>
+    <p class="hero__text">Krafttraining, Functional Fitness und persönliches Coaching in einem modernen Studio – für jedes Level.</p>
+    <div class="hero__actions">
+      <a href="#kontakt" class="btn btn--primary">Kostenloses Probetraining</a>
+      <a href="#kurse" class="btn btn--ghost">Kurse ansehen</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kurse">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Unsere Kurse</p>
+      <h2>Für jedes Ziel das richtige Training</h2>
+    </div>
+    <div class="cards-grid">
+      <div class="course-card">
+        <div class="course-card__icon"><svg viewBox="0 0 24 24"><path d="M4 12h4M16 12h4M6 8v8M18 8v8M8 12h8"/></svg></div>
+        <h3>Krafttraining</h3>
+        <p>Freihanteln, Maschinen und individuelle Trainingspläne für sichtbare Ergebnisse.</p>
+      </div>
+      <div class="course-card">
+        <div class="course-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>HIIT & Functional</h3>
+        <p>Intensive Intervalltrainings, die Kraft, Ausdauer und Beweglichkeit kombinieren.</p>
+      </div>
+      <div class="course-card">
+        <div class="course-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2l2 5 5 .5-4 3.5 1 5-4-3-4 3 1-5-4-3.5 5-.5z"/></svg></div>
+        <h3>Personal Training</h3>
+        <p>1:1 Betreuung mit individuellem Plan, angepasst an deine Ziele.</p>
+      </div>
+      <div class="course-card">
+        <div class="course-card__icon"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zM8 12h8M12 8v8"/></svg></div>
+        <h3>Yoga & Mobility</h3>
+        <p>Regeneration, Beweglichkeit und mentale Balance für den Ausgleich.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="preise">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Mitgliedschaften</p>
+      <h2>Faire Preise, klare Leistungen</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <div class="price-card__amount">29€ <span>/ Monat</span></div>
+        <ul>
+          <li>Zugang zum Gerätepark</li>
+          <li>Freie Trainingszeiten</li>
+          <li>Umkleiden & Duschen</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block">Auswählen</a>
+      </div>
+      <div class="price-card price-card--highlight">
+        <span class="price-card__tag">Beliebt</span>
+        <h3>Premium</h3>
+        <div class="price-card__amount">49€ <span>/ Monat</span></div>
+        <ul>
+          <li>Alles aus Basic</li>
+          <li>Alle Kurse inklusive</li>
+          <li>1x Personal Training / Monat</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--primary btn--block">Auswählen</a>
+      </div>
+      <div class="price-card">
+        <h3>Elite</h3>
+        <div class="price-card__amount">79€ <span>/ Monat</span></div>
+        <ul>
+          <li>Alles aus Premium</li>
+          <li>Unbegrenztes Personal Training</li>
+          <li>Ernährungsberatung</li>
+        </ul>
+        <a href="#kontakt" class="btn btn--ghost btn--block">Auswählen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="trainer">
+  <div class="container about">
+    <div class="about__content">
+      <p class="eyebrow">Unser Team</p>
+      <h2>Trainer, die dich wirklich voranbringen</h2>
+      <p>Unsere zertifizierten Trainer begleiten dich von deinem ersten Tag an – mit individuellen Trainingsplänen, ehrlichem Feedback und echter Motivation.</p>
+      <ul class="about__facts">
+        <li><strong>6</strong> zertifizierte Trainer</li>
+        <li><strong>500+</strong> aktive Mitglieder</li>
+        <li><strong>10</strong> Jahre Erfahrung</li>
+      </ul>
+    </div>
+    <div class="about__media" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="section section--alt" id="kontakt">
+  <div class="container kontakt">
+    <div class="kontakt__intro">
+      <p class="eyebrow">Kontakt</p>
+      <h2>Starte jetzt dein kostenloses Probetraining</h2>
+      <ul class="kontakt__list">
+        <li><strong>Adresse</strong><span>Fitnessweg 5, 10115 Berlin</span></li>
+        <li><strong>Öffnungszeiten</strong><span>Mo–So, 06:00–23:00 Uhr</span></li>
+        <li><strong>Telefon</strong><span>+49 30 000 000</span></li>
+      </ul>
+    </div>
+    <form class="kontakt__form" onsubmit="event.preventDefault(); alert('Demo-Formular – keine echte Anmeldung.');">
+      <div class="form-row"><label>Name</label><input type="text" required></div>
+      <div class="form-row"><label>E-Mail</label><input type="email" required></div>
+      <div class="form-row"><label>Gewünschter Kurs</label><input type="text" placeholder="z. B. Krafttraining"></div>
+      <button type="submit" class="btn btn--primary btn--block">Probetraining anfragen</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo">FIT<span>ZONE</span></a>
+    <p class="footer__copy">&copy; 2026 FitZone Studio — Demo-Projekt von Adem Nasufi</p>
+    <a href="../../index.html" class="back-link">← Zurück zum Portfolio</a>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
